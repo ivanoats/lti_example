@@ -127,3 +127,4 @@ $("#search").submit(function(event) {
   }
   $("#preview").append($iframe);
 });
+$("#host").text(location.host);

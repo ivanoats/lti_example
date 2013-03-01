@@ -31,7 +31,16 @@ button {
   vertical-align: top;
 }
 #preview {
-  margin: 0 10px;
+  margin: -5px 10px 0;
+}
+.details {
+  margin-top: -5px;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 10px;
+}
+#search {
+  padding-left: 10px;
 }
 </style>
 </head>
@@ -41,9 +50,12 @@ button {
   <h1>
   Embed Twitter results:
   </h1>
-  Paste embed codes for tweets or <a href="https://twitter.com/settings/widgets">widgets</a> (set widget height to 300)
+  <div class="details">
+  Paste embed codes for tweets or <a href="https://twitter.com/settings/widgets">widgets</a> 
+  <br/>(set widget height to 300 and add <span id="host">lti-examples.heroku.com</span> to the domains list)
+  </div>
   <form id="search" class='form-inline'>
-  <textarea title="embed code" id="embed_code" style="width: 300px; height: 30px;"></textarea>
+  <textarea title="embed code" id="embed_code" style="width: 300px; height: 50px;"></textarea>
   <button type="submit" class='btn'>Preview</button>
   <button type="submit" class='btn btn-primary' id="add">Add</button>
   </form>
