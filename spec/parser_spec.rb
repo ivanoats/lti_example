@@ -61,7 +61,8 @@ describe 'Parsers' do
         AppParser.parse_app_type(type).should == type
       end
       AppParser.parse_app_type("").should == nil
-      AppParser.parse_app_type("custom").should == nil
+      AppParser.parse_app_type("custom").should == "custom"
+      AppParser.parse_app_type("bacon").should == nil
       AppParser.parse_app_type(nil).should == nil
     end
 
