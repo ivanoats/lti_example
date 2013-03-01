@@ -30,6 +30,9 @@ h1 {
 button {
   vertical-align: top;
 }
+#preview {
+  margin: 0 10px;
+}
 </style>
 </head>
 <body>
@@ -38,17 +41,14 @@ button {
   <h1>
   Embed Twitter results:
   </h1>
-  
+  Paste embed codes for tweets or <a href="https://twitter.com/settings/widgets">widgets</a> (set widget height to 300)
   <form id="search" class='form-inline'>
-  <select id="type">
-    <option value="search">Search Results</option>
-    <option value="profile">User Tweets</option>
-    <option value="single">Single Tweet (by ID)</option>
-  </select>
-  <input type="text" title="query" id="query" style="width: 100px;"/>
+  <textarea title="embed code" id="embed_code" style="width: 300px; height: 30px;"></textarea>
   <button type="submit" class='btn'>Preview</button>
   <button type="submit" class='btn btn-primary' id="add">Add</button>
   </form>
+</div>
+<div id="preview">
 </div>
 
 <script src="/jquery.min.js"></script>
